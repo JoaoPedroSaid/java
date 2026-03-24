@@ -1,5 +1,6 @@
 package atividades;
 
+
 import java.util.Scanner;
 
 public class questoes {
@@ -32,8 +33,7 @@ public class questoes {
         System.out.println(soma); 
         */
 
-        /*  05: 
-        */
+        /*  05:       
         Scanner input = new Scanner(System.in);
 
         System.out.println("Escreva o primeiro número: ");
@@ -49,23 +49,67 @@ public class questoes {
         }
 
         input.close();
+        */
 
+        /*  07: 
+        Scanner input = new Scanner(System.in);
+        int opcao;
+        do{
+        System.out.println("O que você quer fazer? \n");
+        System.out.println("1 - Cadastrar\n2 - Listar\n3 - Sair\n");
 
+        opcao = input.nextInt();
+        
+            switch (opcao) {
+                case 1:
+                    System.out.println("Cadastro.");
+                    break;
+                case 2:
+                    System.out.println("Lista");
+                    break;
+                case 3:
+                    System.out.println("Saindo...");
+                    break;
+                default:
+                    System.out.println("Número inválido, digite novamente...\n");
+                    break;
+            }
+        }while (opcao !=3);
+        
+        input.close();
+        */
 
+        /*  08: 
+        for (int i = 10; i>0; i--){
+            System.out.println(i);
+        }
+        */
 
+        /*  09: 
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Escreva sua nota 1 ");
+        int nota1 = input.nextInt();
 
+        System.out.println("Escreva sua nota 2 ");
+        int nota2 = input.nextInt();
 
+        float media = (nota1+nota2)/2.0f;
+        String status;
 
+        if (media>=70){
+            status = "aprovado";
+        }
+        else if (media>=50){
+            status = "de recuperação";
+        }
+        else{
+            status = "reprovado";
+        }
 
+        System.out.println("Sua média é: "+ media +" e você está "+ status);
 
-
-
-
-
-
-
-
-
-
+        input.close();
+        */
     }
 }
